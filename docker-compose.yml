@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Proyecto2024
+      MYSQL_DATABASE: lms_db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: Proyecto2024
+    ports:
+      - "3306:3306"
+
+  backend:
+    build:
+      context: ./lms-backend
+      dockerfile: Dockerfile
+    volumes:
+      - ./lms-backend/uploads:/app/uploads
+      - ./lms-backend/.env:/app/.env
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_USER: root
+      DB_PASSWORD: Proyecto2024
+      DB_NAME: lms_db
+
+  frontend:
+    build:
+      context: ./lms-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  db-data:

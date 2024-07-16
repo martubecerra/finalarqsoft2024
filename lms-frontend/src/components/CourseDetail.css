@@ -1,0 +1,105 @@
+.course-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.course-detail-card {
+  background-color: #cdcccc; /* Light grey background */
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.course-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #282828;
+  margin-bottom: 10px;
+}
+
+.course-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.course-instructor,
+.course-duration,
+.course-requirements {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.enroll-button {
+  background-color: #090909; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.enroll-button:hover {
+  background-color: #1a1f24; /* Darker blue on hover */
+}
+
+.congrats-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #d5e4d8;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.comments-section, .files-section {
+  margin-top: 20px;
+}
+
+.comments-section h2, .files-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #282828;
+  margin-bottom: 10px;
+}
+
+.comments-section ul, .files-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comments-section li, .files-section li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comments-section textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.comments-section button, .files-section button {
+  background-color: #090909; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.comments-section button:hover, .files-section button:hover {
+  background-color: #1a1f24; /* Darker blue on hover */
+}
+

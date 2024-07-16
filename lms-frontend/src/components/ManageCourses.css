@@ -1,0 +1,82 @@
+.manage-courses-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .manage-courses-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #d9d7d7; /* Light grey background */
+    padding: 10px 10%; /* Ajuste dinámico de padding */
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+  }
+  
+  .create-course-button {
+    margin-top: 10px;
+    background-color: #060606;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 20px;
+  }
+  
+  .create-course-button:hover {
+    background-color: #1a1f24;
+  }
+  
+  .course-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .course-item {
+    background-color: #cdcccc;
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .course-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .course-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-button, .delete-button {
+    margin-top: 10px;
+    background-color: #040404;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .edit-button:hover, .delete-button:hover {
+    background-color: #1a1f24;
+  }
+  

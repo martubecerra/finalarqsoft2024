@@ -1,0 +1,70 @@
+/* Estilos para el contenedor del formulario */
+.login-container {
+    background-color: #dddbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form {
+    background-color: #cdcccc;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .inputForm {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #080808;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+  }
+  
+  .button-submit {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #080808;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button-submit:hover {
+    background-color: #909090;
+  }
+  
+  .p {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+  
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  
+  .flex-row .btn {
+    flex: 1;
+    margin: 0.25rem;
+  }
+  
+  
