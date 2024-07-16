@@ -1,38 +1,37 @@
-# finalarqsoft2024
-
+# ucc-arqsoft1-2024
 Proyecto Práctico Integrador 2024
 
 # Arquitectura de Software I - 2024
 
 ## Integrantes del Grupo
 
-- *Martina Becerra* (2214822)
-- *Sofía Contreras* (2215803)
-- *Manuel Frías Faoro* (2217890)
-- *José Ruarte* (2206224)
+- **Martina Becerra** (2214822)
+- **Sofía Contreras** (2215803)
+- **Manuel Frías Faoro** (2217890)
+- **José Ruarte** (2206224)
 
 
 ## Enunciado Práctico Integrador 2024
 
 Como práctico integrador se solicita la creación de un sistema de gestión de cursos en línea (LMS), donde se destacan dos componentes a ser desarrollados:
 
-- *Backend*, desarrollado en Golang, brindará todas las interfaces necesarias para dar solución al requerimiento.
-- *Frontend*, desarrollado en React, representará la vista final del usuario y consumirá los servicios desarrollados en el backend.
+- **Backend**, desarrollado en Golang, brindará todas las interfaces necesarias para dar solución al requerimiento.
+- **Frontend**, desarrollado en React, representará la vista final del usuario y consumirá los servicios desarrollados en el backend.
 
 ## Puntos Requeridos para la Construcción del Sistema
 
 ### Backend
-- *Autenticación de usuarios*: Implementar un sistema de login y gestión de permisos de usuarios. Deben existir 2 tipos de usuarios: alumno y administrador.
-- *Gestión de cursos*: Desarrollar endpoints que permitan la creación, edición, y eliminación de cursos por parte de los administradores.
-- *Gestión de usuarios inscritos*: Implementar un endpoint para listar los cursos a los que un usuario está inscrito.
-- *Seguridad*: Garantizar la seguridad de las transacciones (autorización por token firmado entre frontend y backend) y datos (hashing de contraseñas) del sistema.
+- **Autenticación de usuarios**: Implementar un sistema de login y gestión de permisos de usuarios. Deben existir 2 tipos de usuarios: alumno y administrador.
+- **Gestión de cursos**: Desarrollar endpoints que permitan la creación, edición, y eliminación de cursos por parte de los administradores.
+- **Gestión de usuarios inscritos**: Implementar un endpoint para listar los cursos a los que un usuario está inscrito.
+- **Seguridad**: Garantizar la seguridad de las transacciones (autorización por token firmado entre frontend y backend) y datos (hashing de contraseñas) del sistema.
 
 ### Frontend
-- *Pantalla de inicio (Home)*: Mostrar un listado de cursos disponibles para inscripción.
-- *Búsqueda de cursos*: Implementar un motor de búsqueda que permita a los usuarios encontrar cursos por palabras clave o categorías.
-- *Detalle del curso*: Mostrar información detallada sobre un curso seleccionado, incluyendo descripción, instructor, duración, y requisitos.
-- *Inscripción en curso*: Habilitar un botón de inscripción para que los usuarios puedan registrarse en los cursos de su interés.
-- *Mis cursos*: Mostrar un listado de los cursos a los que el usuario está inscrito, con la opción de acceder a los detalles de cada curso.
+- **Pantalla de inicio (Home)**: Mostrar un listado de cursos disponibles para inscripción.
+- **Búsqueda de cursos**: Implementar un motor de búsqueda que permita a los usuarios encontrar cursos por palabras clave o categorías.
+- **Detalle del curso**: Mostrar información detallada sobre un curso seleccionado, incluyendo descripción, instructor, duración, y requisitos.
+- **Inscripción en curso**: Habilitar un botón de inscripción para que los usuarios puedan registrarse en los cursos de su interés.
+- **Mis cursos**: Mostrar un listado de los cursos a los que el usuario está inscrito, con la opción de acceder a los detalles de cada curso.
 
 ## Condiciones de Regularidad y Examen Final
 
@@ -87,7 +86,7 @@ Para el examen final se solicita el desarrollo completo del sistema y puntos ext
 ## Pasos para Ejecutar el Programa
 
 1. Crear una base de datos MySQL, con la siguiente consulta:
-    sql
+    ```sql
     -- Crear la base de datos
     CREATE DATABASE lms_db;
 
@@ -177,21 +176,21 @@ Para el examen final se solicita el desarrollo completo del sistema y puntos ext
     PRIMARY KEY (id),
     KEY deleted_at (deleted_at)
     );
-    
+    ```
 
 2. Ejecutar el backend desde la terminal:
-    bash
+    ```bash
     cd lms-backend
     go run cmd/main.go
-    
+    ```
 
 3. Ejecutar el frontend desde la terminal:
-    bash
+    ```bash
     cd lms-frontend
     npm start
-    
+    ```
 4. Ejecutar desde docker, abrir una terminal en la carpeta del archivo:
-    bash
+    ```bash
     docker-compose down
     docker-compose up --build
-    
+    ```
